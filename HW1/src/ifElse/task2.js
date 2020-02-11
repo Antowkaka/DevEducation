@@ -1,12 +1,13 @@
-var x = Number(prompt('Enter "x":'));
-var y = Number(prompt('Enter "y":'));
+"use strict";
+var x = 5;
+var y = 4;
 
 if(x > 0 && y > 0){
-    alert('Первая четверть');
+    console.log('Первая четверть');
 }else if(x < 0 && y > 0){
-    alert('Вторая четверть'); 
+    console.log('Вторая четверть'); 
 }else if(x > 0 && y < 0){
-    alert('Третья четверть'); 
+    console.log('Третья четверть'); 
 }else if(x < 0 && y < 0){
-    alert('Четвёртая четверть'); 
+    console.log('Четвёртая четверть'); 
 };

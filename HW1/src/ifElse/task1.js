@@ -1,7 +1,10 @@
-var a = Number(prompt('Enter "a":'));
-var b = Number(prompt('Enter "b":'));
+"use strict";
+var a = 10;
+var b = 7;
 if(a % 2 == 0){
-    alert(a*b);
+    var div = a*b;
+    console.log(div);
 }else{
-    alert(a+b);
+    var summ = a+b;
+    console.log(summ);
 };

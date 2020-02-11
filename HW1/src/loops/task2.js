@@ -1,3 +1,4 @@
+"use strict";
 var summ = 0;
 for(var i = 1; i < 100; i++){
     if(i < 4){

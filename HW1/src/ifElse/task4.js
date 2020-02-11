@@ -1,3 +1,4 @@
+"use strict";
 var max = function(a, b, c){
     var devision = a*b*c;
     var summ = a+b+c;
@@ -8,7 +9,7 @@ var max = function(a, b, c){
     }
 }
 
-var a = Number(prompt('Enter "a":'));
-var b = Number(prompt('Enter "b":'));
-var c = Number(prompt('Enter "c":'));
-alert(max(a, b, c));
+var a = 0;
+var b = 7;
+var c = 8;
+console.log(max(a, b, c));
