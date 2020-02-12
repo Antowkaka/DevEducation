@@ -70,3 +70,88 @@ let prevStr = 'my Str';
 let newStr = prevStr || 'default';
 console.log('numb && 5 + numb :', theNewNumb && 5+theNewNumb);
 console.log('newStr is ', newStr);
+
+//data type Null&Undefined
+//////////////////
+console.log('Task 8');
+let temp ; 
+console.log(temp); 
+let obj = {}; 
+console.log(obj.property); 
+let ar = [1, 2, 3]; 
+console.log(ar[3]); 
+const anyFunc = () => {return 1;}; 
+console.log(func());  
+
+//data type Symbol()
+////////////////////////
+console.log('Task 9');
+let symbol = Symbol(); 
+console.log(symbol);
+console.log(typeof(symbol));
+let symbol2 = Symbol('name');
+let anotherSymbol = Symbol('name');
+console.log(anotherSymbol);
+console.log(symbol);
+console.log(symbol === anotherSymbol);
+let symbol3 = Symbol.for('name');
+let name = Symbol.keyFor(symbol3);
+console.log(name);
+let user = {userName: 'Vasya',
+            [Symbol('password')]: 'asdf'};
+console.log(user .password);
+console.log(Object.keys(user));
+console.log(Object.getOwnPropertyNames(user));
+let password = user [Symbol.for('password')];
+console.log(password);
+
+//data types Objects
+////////////////////////
+console.log('Task 10');
+let newObject = new Object();
+newObject.name = 'Fred';
+let newObject1 = Object.create({x: 20, y: 30});
+newObject .x = 40;
+console.log(newObject1.hasOwnProperty('x'));
+console.log(newObject1.x);
+delete(newObject1.x); 
+console.log('x' in newObject1);
+console.log('z' in newObject1); 
+console.log(newObject1.x);
+console.log(newObject1.z);
+console.log('z' in newObject1);
+newObject1.z = undefined;
+console.log(newObject1.z);
+console.log('z' in newObject1);
+
+//Cycles
+/////////////////
+console.log('Task 11');
+let newArr = [2, 5, 4, 3, 6, 3, 2, 6, 2];
+let car = {wheels: 4,
+           engine: 1,
+           doors: 5};
+for(let key in car) console.log('Key: ', key);
+for(let iter of newArr) console.log(newArr[iter]);
+
+//Functions
+//////////////////
+console.log('Task 11');
+let newName = 'Petro';
+//declaration
+function myFunc(name){return 'Hello' + name;};
+console.log(myFunc(newName));
+//expression
+let myNewFunc = function(name){return 'Hello' + name;};
+console.log(myNewFunc(newName));
+//anonymus
+() => console.log('launch anonymous function!!!');
+//new Function()
+let sum = new Function('a,b', 'return a+b;');
+let result = sum(1, 2); 
+console.log(result);
+//typeof callback
+console.log(typeof(myFunc));
+console.log(typeof(String));
+console.log(typeof(new String()));
+ 
